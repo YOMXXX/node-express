@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="../stylesheets/bootstrap/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<table class="table table-hover table-borderer">
+				<thead>
+					<tr>
+						<td>电影名字</td>
+						<td>导演</td>
+						<td>国家</td>
+						<td>上映时间</td>
+						<td>录入时间</td>
+						<td>查看</td>
+						<td>更新</td>
+						<td>删除</td>
+					</tr>
+				</thead>
+				<tbody>
+				<% for(var i = 0; i < movies.length; i++) { %>
+					<tr class="item-id<%= movies[i]._id %>">
+						<td><%= movies[i].director %></td>
+						<td><%= movies[i].title %></td>
+						<td><%= movies[i].language %></td>
+						<td><%= movies[i].country %></td>
+						<td><%= movies[i].summary %></td>
+						<td><%= movies[i].flash %></td>
+						<td><%= movies[i].poster %></td>
+						<td><%= movies[i].year %></td>
+					</tr>
+				<% } %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

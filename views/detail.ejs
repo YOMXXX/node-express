@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='../stylesheets/style.css' />
+    <link rel="stylesheet" href="../stylesheets/bootstrap/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="pageHeader">
+          <h1><%= title %></h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <object style="height: 500px;" type="application/x-shockwave-flash" data="//static.youku.com/v20170420.0/v/swf/upsplayer/loader.swf" width="100%" height="100%" id="movie_player"><param name="allowFullScreen" value="true">
+            <param name="allowscriptaccess" value="always">
+            <param name="allowFullScreenInteractive" value="true">
+            <param name="flashvars" value="skincolor1=ffffff&amp;skincolor2=ffffff&amp;VideoIDS=XMjcyMzUyMDc0MA==&amp;ShowId=0&amp;category=91&amp;Cp=0&amp;unCookie=0&amp;frame=undefined&amp;uepflag=0&amp;Tid=0&amp;isAutoPlay=true&amp;playmode=2&amp;show_ce=1&amp;winType=interior&amp;Fid=49600310&amp;Pt=0&amp;Ob=1&amp;plchid=&amp;embedid=AjY4MDg4MDE4NQJ3d3cueW91a3UuY29tAi8=&amp;ysuid=14804341450350An&amp;vext=bc%3D%26pid%3Dundefined%26unCookie%3Dundefined%26frame%3Dundefined%26type%3D1%26fob%3D1%26fpo%3D0%26svt%3D0%26cna%3DNTDHENVRNEACAbRNVgwABNjC%26emb%3DAjY4MDg4MDE4NQJ3d3cueW91a3UuY29tAi8%3D%26dn%3D%E7%BD%91%E9%A1%B5%26hwc%3D1%26mtype%3Doth&amp;cna=NTDHENVRNEACAbRNVgwABNjC&amp;pageStartTime=1492946978216">
+            <param name="movie" value="//static.youku.com/v20170420.0/v/swf/upsplayer/loader.swf">
+            <div class="player_html5">
+              <div class="picture" style="height:100%">
+                <div style="line-height:460px;"><span style="font-size:18px">您还没有安装flash播放器,请点击<a href="//www.adobe.com/go/getflash" target="_blank">这里</a>安装</span>
+                </div>
+              </div>
+            </div>
+          </object>
+        </div>
+        <div class="col-md-5">
+        	<dl class="dl-horizontal">
+        		<dd>电影名字</dd>
+        		<dd><%= movie.title %></dd>
+        		<dd>导演</dd>
+        		<dd><%= movie.director %></dd>
+        		<dd>国家</dd>
+        		<dd><%= movie.country %></dd>
+        		<dd>语言</dd>
+        		<dd><%= movie.language %></dd>
+        		<dd>上映年份</dd>
+        		<dd><%= movie.year %></dd>
+        		<dd>简介</dd>
+            <dd><%= movie.summary %></dd>
+        	</dl>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+  </script>
+</html>
